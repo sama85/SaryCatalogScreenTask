@@ -179,10 +179,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        bannerViewModel.getbanners().observe(this, catalogModel -> {
-            if(catalogModel!=null){
-                setupViewPager(catalogModel);
-
+        bannerViewModel.getbanners().observe(this, bannerModel -> {
+            if(bannerModel!=null){
+                setupViewPager(bannerModel);
 
             }
         });
